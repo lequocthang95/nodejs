@@ -1,0 +1,17 @@
+<div class="container mt-4">
+    <div class="row">
+        {{#each dataset}}
+            <div class="col-sm-6 col-lg-4">
+                <div class="card mb-4">
+                    <img src="{{this.image}}" class="card-img-top" alt="...">
+                    <div class="card-body">  
+                        <h5 class="card-title">{{this.name}}</h5>
+                        <p class="card-text">{{this.description}}</p>
+                        <p class="card-text">{{this.lever}}</p>
+                        <a href="/courses/{{this.slug}}" class="btn btn-primary">Xem chi tiet</a>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>
